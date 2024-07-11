@@ -16,8 +16,7 @@ const getReferralsAccredian = async () => {
   }
 };
 
-// cron.schedule("*/15 * * * *", getReferralsAccredian);
-cron.schedule("*/5 * * * * *", getReferralsAccredian);
+cron.schedule("*/5 * * * *", getReferralsAccredian);
 
 app.get("/", (req, res) => {
   res.send("Cron Server is running!");
