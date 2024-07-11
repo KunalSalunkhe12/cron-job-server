@@ -19,7 +19,7 @@ const getReferralsAccredian = async () => {
 cron.schedule("*/15 * * * *", getReferralsAccredian);
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Cron Server is running!");
 });
 
 app.listen(PORT, () => {
